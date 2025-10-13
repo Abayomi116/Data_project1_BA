@@ -90,6 +90,33 @@ df_Ishort_haul = df_Ishort_haul.drop(columns=['S/N','reviewer_detail', 'reviews'
 ```
 ![Cleaned Data Overview](missingno_matrix2.png)
 
+```Python
+correlation_result = df_Ishort_haul.corr()['Recommended'].sort_values(ascending=False)
+print(correlation_result)
 
-  
+Recommended               1.000000
+Ground Service            0.675204
+Seat Comfort              0.604414
+Cabin Staff Service       0.598581
+Food & Beverages          0.552210
+Inflight Entertainment    0.288967
+Wifi & Connectivity       0.238077
+Name: Recommended, dtype: float64
 
+```
+![Graph](corr_graph.png)
+Result indicates that improvement in all the service factors would result to improvement of customer recommendations (Which is a proxy to satisfaction). This is because all the service factors are positively correlated to Recommendation.
+
+However, prioritising the most correlated factors would optimise cost and increase efficiency. This is because some service factors are less correlated than others.
+The highest correlation comes from Ground service while the lowest is from Wifi & Connectivity.
+
+## PRACTICAL RECOMMENDATIONS
+Based on the findings, the following practical steps are recommended for British Airways.
+
+- Ground Service: Allocate resources to improve ground services, such as upgrading mobile apps for seamless check-in, enhancing lounge facilities, and providing better accessibility for passengers with disabilities. These improvements would make Ground Services very satisfactory.
+
+- Cabin staff service: Invest in continuous training for cabin staff to improve customer interactions and service quality.
+
+- Seat Comfort: Enhance seat designs and comfort to meet customer expectations.
+
+- Inflight Entertainment and Wi-Fi Connectivity: While these factors are less significant, they should still be maintained at a satisfactory level, but with lower priority compared to other services.
