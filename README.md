@@ -102,9 +102,9 @@ Food & Beverages          0.552210
 Inflight Entertainment    0.288967
 Wifi & Connectivity       0.238077
 Name: Recommended, dtype: float64
-
 ```
-![Graph](corr_graph(1).png)
+![Graph](corr_graph (1))
+
 Result indicates that improvement in all the service factors would result to improvement of customer recommendations (Which is a proxy to satisfaction). This is because all the service factors are positively correlated to Recommendation.
 
 However, prioritising the most correlated factors would optimise cost and increase efficiency. This is because some service factors are less correlated than others.
