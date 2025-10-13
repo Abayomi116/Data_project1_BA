@@ -104,14 +104,14 @@ Wifi & Connectivity       0.238077
 Name: Recommended, dtype: float64
 
 ```
-![Graph](corr_graph.png)
+![Graph](corr_graph2.png)
 Result indicates that improvement in all the service factors would result to improvement of customer recommendations (Which is a proxy to satisfaction). This is because all the service factors are positively correlated to Recommendation.
 
 However, prioritising the most correlated factors would optimise cost and increase efficiency. This is because some service factors are less correlated than others.
 The highest correlation comes from Ground service while the lowest is from Wifi & Connectivity.
 
 ## PRACTICAL RECOMMENDATIONS
-Based on the findings, the following practical steps are recommended for British Airways.
+Based on the findings, the following practical steps are recommended for British Airways' Short Haul Flights.
 
 - Ground Service: Allocate resources to improve ground services, such as upgrading mobile apps for seamless check-in, enhancing lounge facilities, and providing better accessibility for passengers with disabilities. These improvements would make Ground Services very satisfactory.
 
