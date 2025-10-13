@@ -1,5 +1,16 @@
 # LEVERAGING CUSTOMERS' DATA FOR CUSTOMER SATISFACTION AND OPERATIONAL EFFICIENCY IMPROVEMENTS IN BRITISH AIRWAYS SHORT-HAUL FLIGHTS.
 ## Data Analytics project - Aviation
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning/Preparation](#data-cleaningpreparation)   <!-- the slash is removed -->
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis](#data-analysis)
+- [PRACTICAL RECOMMENDATIONS](#practical-recommendations)
+- [Analysis Limitations](#analysis-limitations)
+- [References](#references)
+
 ### Project Overview
 
 The project aims to uncover Data-driven strategies that can help British Airways optimise short-haul flight services, offering recommendations for operational improvements.
@@ -120,3 +131,12 @@ Based on the findings, the following are recommended to British Airways' for Sho
 - Seat Comfort: Enhance seat designs and comfort to meet customer expectations.
 
 - Inflight Entertainment and Wi-Fi Connectivity: While these factors are less significant, they should still be maintained at a satisfactory level, but with lower priority compared to other services.
+
+### Analysis Limitations
+This study has provided valuable insights into customer satisfaction and operational efficiency for British Airways. However, some of the research limitations includes:
+
+- Incomplete Data: Some columns had missing data, which were filled with mean values, potentially impacting the analysis.
+- Text Data Sample Size: Limitation of the sample size of data might limit the generalisability of the findings.
+
+### References
+Skytrax (2024), British Airways Customer reviews. Available at: https://www.airlinequality.com/airline-reviews/british-airways (Accessed: 10 June 2024)
