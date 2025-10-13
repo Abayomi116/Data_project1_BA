@@ -1,4 +1,4 @@
-l# LEVERAGING CUSTOMERS' DATA FOR CUSTOMER SATISFACTION AND OPERATIONAL EFFICIENCY IMPROVEMENTS IN BRITISH AIRWAYS SHORT-HAUL FLIGHTS.
+# LEVERAGING CUSTOMERS' DATA FOR CUSTOMER SATISFACTION AND OPERATIONAL EFFICIENCY IMPROVEMENTS IN BRITISH AIRWAYS SHORT-HAUL FLIGHTS.
 ## Data Analytics project - Aviation
 ### Project Overview
 
@@ -68,13 +68,27 @@ df_Ishort_haul.to_csv("/British Airways-Final-Data-Skytrax.csv", index=False)
 df_Ishort_haul.shape
 (770, 15) #Our data has been reduced from 3,850 rows to 770 rows (only short-haul flights).
 msno.matrix(df_Ishort_haul)
-
+```
 ![msno matrix](missingno_matrix.png)
 
+```python
+#The bank rows are replaced with mean of each column and 
+df_Ishort_haul['Wifi & Connectivity'].fillna(df_Ishort_haul['Wifi & Connectivity'].mean(), inplace=True)
+df_Ishort_haul['Inflight Entertainment'].fillna(df_Ishort_haul['Inflight Entertainment'].mean(), inplace=True)
+df_Ishort_haul['Food & Beverages'].fillna(df_Ishort_haul['Food & Beverages'].mean(), inplace=True)
+df_Ishort_haul['Seat Comfort'].fillna(df_Ishort_haul['Seat Comfort'].mean(), inplace=True)
+df_Ishort_haul['Cabin Staff Service'].fillna(df_Ishort_haul['Cabin Staff Service'].mean(), inplace=True)
+df_Ishort_haul['Ground Service'].fillna(df_Ishort_haul['Ground Service'].mean(), inplace=True)
 
+```
 
+### Pearson Correlation Coefficient
+Columns that are not relevant to the T-tests and Pearson correlation coefficient Analysis would be deleted from the df_Ishort_haul DataFrame
 
-
+```python
+df_Ishort_haul = df_Ishort_haul.drop(columns=['S/N','reviewer_detail', 'reviews','Type Of Traveller', 'Route', 'Date Flown', 'Aircraft','Seat Type']
+```
+![Cleaned Data Overview](missingno_matrix2.png)
 
 
   
