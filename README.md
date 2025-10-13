@@ -66,7 +66,7 @@ df_Ishort_haul.to_csv("/British Airways-Final-Data-Skytrax.csv", index=False)
 
 #Observing shape of the short_haul data extracted from the initial data list
 df_Ishort_haul.shape
-(770, 16) #Our data has been reduced from 3,850 rows to 770 rows (only short-haul flights).
+(770, 15) #Our data has been reduced from 3,850 rows to 770 rows (only short-haul flights).
 
 msno.matrix(df_Ishort_haul)
 
